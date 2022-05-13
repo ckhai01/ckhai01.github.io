@@ -1,0 +1,649 @@
+﻿/* Header background: https://esportsobserver.com/esports-essentials-counter-strike-majors/ */
+/*League logo: https://vectorified.com/league-of-legends-icon-16x16*/
+/*CSGO logo: https://imgur.com/ZfAJNyw*/
+/*OW logo https://playablepedagogy.wordpress.com/2015/09/28/dota-2-a-collaboration-in-decimation/*/
+/*DOTA logo: https://www.codesofinterest.com/2018/01/openai-and-dota-2-bot.html*/
+/*Fortnite logo: https://nintencity.com/game-reviews/fortnite-review*/
+/*Dark wallpaper: https://www.pixelstalk.net/dark-minimalist-wallpapers/*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Catamaran', sans-serif;
+}
+
+
+html {
+    color: white;
+    background-color: #101010;
+}
+
+
+.backgroundContainer {
+    background-color: black;
+    padding: 200px 0;
+    text-align: center;
+    background-image: url("../images/ESports/header.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    
+}
+
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    background-color: #101010;
+}
+
+.text-container p {
+    word-wrap: break-word;
+    width: 500px;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+iframe {
+    border-radius: 30px;
+    max-width: 100%;
+    margin-bottom: 30px;
+    
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #101010;
+    padding: 30px 0;
+    padding-top: 100px;
+    background-image: url("../images/dark.jfif");
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+
+
+.heading {
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    
+}
+
+.specialheading {
+    position: absolute;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    top: 0;
+    left: auto;
+}
+
+
+/*Animated text stuff*/
+
+.animatedContainer {
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+.animatedContainer span {
+    color: white;
+    display: block;
+}
+
+.toptext {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 15px;
+    background: black;
+    border-radius: 20px;
+    position: relative;
+    animation: text 3s 1;
+    padding: 20px;
+}
+
+.bottomtext {
+    font-size: 20px;
+    color: white;
+    background: black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+@keyframes text {
+    0% {
+        color: black;
+        margin-bottom: -40px;
+    }
+
+    30% {
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+
+    85% {
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+
+
+/*Timeline stuff*/
+
+.timeline{
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.timeline-content .date{
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.timeline ul{
+    list-style: none;
+
+}
+
+.timeline ul li{
+    padding: 20px;
+    background-color: #1e1f22;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.timeline ul li:first-child{
+    margin-top: 10px;
+}
+
+.timeline-content h1{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.timeline-content p{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+@media only screen and (min-width: 768px){
+
+    .timeline::before{
+        content:'';
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        background-color: grey;
+        left: 50%;
+        transform: translateX(-50%);
+        
+    }
+
+    .timeline ul li{
+        width: 50%;
+        margin-bottom: 50px;
+        position: relative;
+
+    }
+
+    .timeline ul li:nth-child(odd){
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+        border-radius: 20px 0px 20px 20px
+    }
+
+    .timeline ul li:nth-child(even) {
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+        border-radius: 0px 20px 20px 20px;
+    }
+
+    /*creating the dots*/
+    .timeline ul li::after{
+        content: '';
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color: grey;
+        border-radius: 50%;
+        top: 0;
+        transition: 0.2s;
+    }
+
+
+
+    .timeline ul li:nth-child(odd)::after {
+        transform: translate(50%, -50%);
+        right: -30px;
+    }
+
+    .timeline ul li:nth-child(even)::after {
+        transform: translate(-50%, -50%);
+        left: -30px;
+    }
+
+    .timeline ul li:hover:after{
+        background-color: aqua;
+        padding: 5px;
+
+    }
+
+    .timeline-content .date{
+        position: absolute;
+        top: -30px;
+
+    }
+}
+
+/*Icons*/
+
+.iconcontainer {
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 240px auto;
+    margin-top: -10px;
+    margin-bottom: 500px;
+    
+}
+
+.iconcontainer .heading{
+    margin: 10px;
+}
+
+.iconcontainer .box {
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: gold;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.iconcontainer .box .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: aqua;
+    transition: 0.5s;
+    z-index: 1;
+}
+.iconcontainer .box:hover .icon{
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+}
+
+
+.iconImage {
+    width: 57px;
+    height: 57px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.iconcontainer .box .content {
+    top: 120px;
+    position: absolute;
+    height: calc(100% - 100px);
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.iconcontainer .box:hover .content {
+    top: 100px;
+    opacity: 1;
+}
+
+.iconcontainer .box .content h3{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 24px;
+}
+
+.iconcontainer .box .content p{
+    margin: 0;
+    padding: 0;
+    color: black;
+    
+}
+
+.iconcontainer .box:nth-child(4) {
+    background: black;
+}
+
+.iconcontainer .box:nth-child(4) .content h3 {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+.iconcontainer .box:nth-child(4) .content p {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.iconcontainer .box:nth-child(4) .icon{
+    background-color: goldenrod;
+}
+
+.iconcontainer .box:nth-child(5) {
+    background: darkorange;
+}
+
+.iconcontainer .box:nth-child(5) .icon{
+    background-color: white;
+}
+
+.iconcontainer .box:nth-child(6) {
+    background-color: darkred;
+}
+
+.iconcontainer .box:nth-child(6) .icon{
+    background-color: black;
+}
+
+.iconcontainer .box:nth-child(6) .content p{
+    font-weight: 800;
+}
+
+
+.iconcontainer .box:nth-child(7) {
+    background-color: black;
+}
+
+.iconcontainer .box:nth-child(7) .icon{
+    background-color: darkred;
+}
+
+.iconcontainer .box:nth-child(7) .content h3 {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+.iconcontainer .box:nth-child(7) .content p {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.iconcontainer .box:nth-child(8) {
+    background-color: white;
+}
+
+.iconcontainer .box:nth-child(8) .icon {
+    background-color: purple;
+}
+
+@media screen and (max-width: 1200px){
+    .iconcontainer{
+        width: 400px;
+        height: 1500px;
+    }
+}
+
+.thetable{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th,td{
+    padding: 10px;
+}
+
+th{
+    background-color: deepskyblue;
+}
+
+td{
+    background-color: floralwhite;
+    color: black;
+}
+
+.buttonContainer {
+    height: 50px;
+    position: relative;
+}
+
+
+.buttonContainer2 {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    padding: 7px;
+    font-size: 15px;
+    font-family: 'Catamaran', sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+.button:hover{
+    background-color: aqua;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+form {
+    margin: auto;
+    padding: 10px;
+    border: 2px solid white;
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+
+
+.wallpaper {
+    background-image: url("../images/ESports/background2.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+
+
+.formHeader{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.output{
+    color: red;
+}
+
+.challenges{
+    margin-bottom: 30px;
+
+}
+
+.challenge-item{
+    overflow: hidden;
+    border-bottom: 1px dashed white;
+    padding: 25px 0;
+}
+
+.challenge-item img{
+    float: left;
+    margin-right: 20px;
+    margin-left: 40px;
+    width: 384px;
+    height: 270px;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+.challenge-item img:hover{
+    width: 412px;
+    height: 290px;
+}
+
+.challenge-item p{
+    max-width: 1400px;
+    font-size: 20px;
+}
+
+.challenge-item h3{
+    margin-top: 0;
+}
+
+.conclusion{
+    margin-bottom: 30px;
+}
+
+
+/*Navigation bar and footer*/
+
+#menu-nav {
+  margin: 0;
+  background-color: black;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+ 
+#navigation-bar ul {
+  border-radius: 4px;
+  overflow: hidden;
+}
+#navigation-bar li {
+  float: left;
+  width: 14.2%;
+}
+#navigation-bar li:hover a::before {
+  right: 0;
+  left: 0;
+}
+#navigation-bar a {
+  color: white;
+  font-size: 1.2vw;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 0;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+#navigation-bar a:hover {
+  color: darkgrey;
+}
+#navigation-bar a::before {
+  content: "";
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  background-color: aqua;
+}
+#navigation-bar a:hover::before {
+  right: 0;
+  left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    transition: 0.3s;
+
+}
+
+footer a:hover{
+    color: aqua;
+}

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConsoleSales>
+	<List>
+		<Manufacturer>Nintendo</Manufacturer>
+		<HomeConsoleSales>318M</HomeConsoleSales>
+		<HandheldConsoleSales>430M</HandheldConsoleSales>
+		<TotalSales>754M</TotalSales>
+	</List>
+	<List>
+		<Manufacturer>Sony</Manufacturer>
+		<HomeConsoleSales>445M</HomeConsoleSales>
+		<HandheldConsoleSales>90M</HandheldConsoleSales>
+		<TotalSales>535M</TotalSales>
+	</List>
+	<List>
+		<Manufacturer>Microsoft</Manufacturer>
+		<HomeConsoleSales>149M</HomeConsoleSales>
+		<HandheldConsoleSales>-</HandheldConsoleSales>
+		<TotalSales>149M</TotalSales>
+	</List>
+	<List>
+		<Manufacturer>Sega</Manufacturer>
+		<HomeConsoleSales>64-67M</HomeConsoleSales>
+		<HandheldConsoleSales>14M</HandheldConsoleSales>
+		<TotalSales>81M</TotalSales>
+	</List>
+	<List>
+		<Manufacturer>Atari</Manufacturer>
+		<HomeConsoleSales>31M</HomeConsoleSales>
+		<HandheldConsoleSales>1M</HandheldConsoleSales>
+		<TotalSales>32M</TotalSales>
+	</List>
+	<List>
+		<Manufacturer>Hudson Soft/NEC</Manufacturer>
+		<HomeConsoleSales>10M</HomeConsoleSales>
+		<HandheldConsoleSales>-</HandheldConsoleSales>
+		<TotalSales>10M</TotalSales>
+	</List>
+	<List>
+		<Manufacturer>Bandai</Manufacturer>
+		<HomeConsoleSales>-</HomeConsoleSales>
+		<HandheldConsoleSales>3.5M</HandheldConsoleSales>
+		<TotalSales>3.5M</TotalSales>
+	</List>
+</ConsoleSales>

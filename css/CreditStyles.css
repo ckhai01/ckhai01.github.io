@@ -1,0 +1,90 @@
+﻿body {
+    background-color: black;
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+}
+h1, p{
+    text-align: center;
+
+}
+
+.row {
+    padding: 200px 0;
+    background: linear-gradient(to top, black, pink);
+   
+}
+
+
+
+
+
+/*Navigation bar and footer*/
+
+#menu-nav {
+  margin: 0;
+  background-color: black;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+ 
+#navigation-bar ul {
+  border-radius: 4px;
+  overflow: hidden;
+}
+#navigation-bar li {
+  float: left;
+  width: 14.2%;
+}
+#navigation-bar li:hover a::before {
+  right: 0;
+  left: 0;
+}
+#navigation-bar a {
+  color: white;
+  font-size: 1.2vw;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 0;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+#navigation-bar a:hover {
+  color: darkgrey;
+}
+#navigation-bar a::before {
+  content: "";
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  background-color: aqua;
+}
+#navigation-bar a:hover::before {
+  right: 0;
+  left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    transition: 0.3s;
+
+}
+
+footer a:hover{
+    color: aqua;
+}

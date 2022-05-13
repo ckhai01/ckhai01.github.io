@@ -1,0 +1,540 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Catamaran', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+h3 {
+    color: lightcyan;
+    text-align: center;
+}
+
+h1 {
+    padding: 20px;
+}
+
+.videocontainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    margin-bottom: 0px;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+    height: 60%;
+    border: none;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 120px;
+    padding-bottom: 0px
+}
+
+.timeline {
+    min-width: 300px;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 0px;
+}
+
+h2 {
+    text-align: center;
+    color: #FEAE51FF;
+    padding: 20px;
+}
+
+.img-left {
+    float: left;
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.img-right {
+    float: right;
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.timeline p {
+    font-size: 1em;
+    line-height: 1.75em;
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, purple, #9176e3);
+    border-image-slice: 1;
+    border-width: 3px;
+    margin: 0;
+    padding: 40px;
+    counter-increment: section;
+    position: relative;
+    color: lightcyan;
+}
+
+.timeline p:before {
+    content: counter(section);
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 1.75em;
+    width: 1.75em;
+    background-color: #34435E;
+    text-align: center;
+    line-height: 1.75em;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+.timeline p:nth-child(odd) {
+    border-right: 3px solid;
+    border-radius: 15px;
+    padding-left: 0;
+}
+
+.timeline p:nth-child(odd):before {
+    left: 100%;
+    margin-left: -20px;
+    background-color: #521cad;
+}
+
+.timeline p:nth-child(even) {
+    border-left: 3px solid;
+    border-radius: 15px;
+    padding-right: 0;
+}
+
+.timeline p:nth-child(even):before {
+    right: 100%;
+    margin-right: -20px;
+    background-color: #521cad;
+}
+
+.timeline p:first-child {
+    border-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.timeline p:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #252930;
+}
+
+.header h2 {
+    padding: 20px;
+}
+
+/* The progress container (grey background) */
+.progresstotal {
+    width: 100%;
+    height: 8px;
+    background: #3f4754;
+}
+
+/* The progress bar (scroll indicator) */
+.progress {
+    height: 8px;
+    width: 0px;
+    background-image: linear-gradient(to left, #9176e3, orange);
+}
+
+table {
+    font-family: Arial;
+    border: lightcyan solid 2px;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+th {
+    background-color: #252930;
+    color: #DEDEDE;
+}
+
+td {
+    background-color: #111212;
+    color: #B0B0B0;
+}
+
+th, td {
+    border: white solid 1px;
+    padding: 4px;
+}
+
+caption {
+    font-size: 1.5em;
+    color: #DEDEDE;
+    padding: 10px;
+}
+
+#table1 {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f1f1c1;
+    font-size: 1em;
+    padding: 6px 24px;
+    border-radius: 8px;
+    border: 2px solid #f1f1c1;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.buttoncentre {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
+#table1:hover {
+    background-color: black;
+    color: #f1f1c1;
+}
+
+form {
+    background-image: linear-gradient(to left, #9176e3, orange);
+    border: 1px solid black;
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-left: 20px;
+}
+
+input[type="text"], input[type="email"] {
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.fieldset {
+    border-top: 3px solid black;
+    border-left: 120px solid black;
+    border-right: 120px solid black;
+    border-bottom: 3px solid black;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+.formlegend {
+    padding: 5px 20px;
+}
+
+.formcenter {
+    text-align: center;
+}
+
+.formcenter label {
+    display: inline-block;
+    width: 100px;
+}
+
+.submit {
+    background-color: black;
+    font-size: 1em;
+    padding: 3px 24px;
+    border-radius: 8px;
+    border: 2px solid black;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-bottom: 6px;
+    color: #f1f1c1;
+}
+
+.submit:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.submitcontent {
+    padding-top: 10px;
+}
+
+.creature img {
+    width: 7%;
+    animation: creature 15s linear infinite;
+}
+
+@keyframes creature {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-290vh);
+        opacity: 0;
+    }
+}
+
+.creature {
+    float: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    z-index: -1;
+    bottom: -1200px;
+}
+
+.creature img:nth-child(1){
+    animation-delay: 4s;
+}
+.creature img:nth-child(2){
+    animation-delay: 2.5s;
+    width: 9%;
+}
+.creature img:nth-child(3) {
+    animation-delay: 0.5s;
+    width: 3%;
+}
+.creature img:nth-child(4) {
+    animation-delay: 1s;
+    width: 8%;
+}
+.creature img:nth-child(5) {
+    animation-delay: 6s;
+    width: 6%;
+}
+.creature img:nth-child(6) {
+    animation-delay: 4.2s;
+    width: 11%;
+}
+.creature img:nth-child(7) {
+    animation-delay: 5.4s;
+}
+
+/* Year annotation*/
+p#pong::before {
+    content: "1972";
+}
+
+p#space::before {
+    content: "1978";
+}
+
+p#pac::before {
+    content: "1980";
+}
+
+p#dk::before {
+    content: "1981";
+}
+
+p#tetris::before {
+    content: "1984";
+}
+
+p#smb::before {
+    content: "1985";
+}
+
+p#loz::before {
+    content: "1986";
+}
+
+p#mega::before {
+    content: "1987";
+}
+
+p#gameboy::before {
+    content: "1989";
+}
+
+p#sonic::before {
+    content: "1991";
+}
+
+p#wolf::before {
+    content: "1992";
+}
+
+p#doom::before {
+    content: "1993";
+}
+
+p#n64::before {
+    content: "1996";
+}
+
+p#golden::before {
+    content: "1997";
+}
+
+p#ocarina::before {
+    content: "1998";
+}
+
+p#cs::before {
+    content: "1999";
+}
+
+p#sims::before {
+    content: "2000";
+}
+
+p#cod::before {
+    content: "2003";
+}
+
+p#wow::before {
+    content: "2004";
+}
+
+p#wii::before {
+    content: "2006";
+}
+
+p#portal::before {
+    content: "2007";
+}
+
+p#mc::before {
+    content: "2009";
+}
+
+p#rdr::before {
+    content: "2010";
+}
+
+p#skyrim::before {
+    content: "2011";
+}
+
+p#gta::before {
+    content: "2013";
+}
+
+p#ps4::before {
+    content: "2014";
+}
+
+p#undertale::before {
+    content: "2015";
+}
+
+p#go::before {
+    content: "2016";
+}
+
+p#switch::before {
+    content: "2017";
+}
+
+p#fortnite::before {
+    content: "2018";
+}
+
+p#sekiro::before {
+    content: "2019";
+}
+
+p#ac::before {
+    content: "2020";
+}
+
+/*Navigation bar and footer*/
+
+#menu-nav {
+  margin: 0;
+  background-color: black;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+ 
+#navigation-bar ul {
+  border-radius: 4px;
+  overflow: hidden;
+}
+#navigation-bar li {
+  float: left;
+  width: 14.2%;
+}
+#navigation-bar li:hover a::before {
+  right: 0;
+  left: 0;
+}
+#navigation-bar a {
+  color: white;
+  font-size: 1.2vw;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 0;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+#navigation-bar a:hover {
+  color: darkgrey;
+}
+#navigation-bar a::before {
+  content: "";
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  background-color: aqua;
+}
+#navigation-bar a:hover::before {
+  right: 0;
+  left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    transition: 0.3s;
+
+}
+
+footer a:hover{
+    color: aqua;
+}

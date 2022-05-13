@@ -1,0 +1,149 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Catamaran', sans-serif;
+}
+
+
+html {
+    color: white;
+    background-color: #101010;
+}
+
+.backgroundContainer {
+    padding: 200px 0;
+    text-align: center;
+    background-image: url("../images/index/indexwallpaper.jfif");
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.backgroundContainer h1{
+    font-size: 70px;
+    padding: 40px;
+    max-width: 500px;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+}
+
+.backgroundContainer h3{
+    margin-top: 30px;
+    font-size: 20px;
+    max-width: 1200px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/*Navigation bar and footer*/
+
+#menu-nav {
+  margin: 0;
+  background-color: black;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+ 
+#navigation-bar ul {
+  border-radius: 4px;
+  overflow: hidden;
+}
+#navigation-bar li {
+  float: left;
+  width: 14.2%;
+}
+#navigation-bar li:hover a::before {
+  right: 0;
+  left: 0;
+}
+#navigation-bar a {
+  color: white;
+  font-size: 1.2vw;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 0;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+#navigation-bar a:hover {
+  color: darkgrey;
+}
+#navigation-bar a::before {
+  content: "";
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  background-color: aqua;
+}
+#navigation-bar a:hover::before {
+  right: 0;
+  left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.start {
+    background-color: black;
+    font-size: 20px;;
+    padding: 3px 24px;
+    border-radius: 8px;
+    border: 2px solid black;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-bottom: 6px;
+    color: white;
+}
+
+.start:hover {
+    background-color: transparent;
+    color: black;
+}
+
+button {
+    background-color: black;
+    font-size: 20px;;
+    padding: 3px 24px;
+    border-radius: 8px;
+    border: 2px solid black;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-bottom: 6px;
+    color: white;
+}
+
+button:hover {
+    background-color: transparent;
+    color: black;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    transition: 0.3s;
+
+}
+
+footer a:hover{
+    color: aqua;
+}

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0"?>
+<Statistics>
+  <List>
+		<gender>Female</gender>
+		<hr111>15.6%</hr111>
+		<hr1-211>17.5%</hr1-211>
+		<hr2-411>21.0%</hr2-411>
+		<hr4-711>18.2%</hr4-711>
+		<hr7-1211>13.2%</hr7-1211>
+		<hr12-2011>7.9%</hr12-2011>
+		<hr2011>6.5%</hr2011>
+		<average11>5.80</average11>
+  </List>
+	<List>
+		<gender>Male</gender>
+		<hr111>13.4%</hr111>
+		<hr1-211>15.4%</hr1-211>
+		<hr2-411>16.4%</hr2-411>
+		<hr4-711>19.0%</hr4-711>
+		<hr7-1211>16.3%</hr7-1211>
+		<hr12-2011>11.4%</hr12-2011>
+		<hr2011>8.2%</hr2011>
+		<average11>6.84</average11>
+	</List>
+	
+</Statistics>

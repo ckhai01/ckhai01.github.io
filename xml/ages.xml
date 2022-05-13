@@ -1,0 +1,70 @@
+﻿<?xml version="1.0"?>
+<Statistics>
+  <List>
+		<ages>18-25 years old</ages>
+		<hr11>9.1%</hr11>
+		<hr1-21>14.5%</hr1-21>
+		<hr2-41>16.9%</hr2-41>
+		<hr4-71>21.0%</hr4-71>
+		<hr7-121>16.1%</hr7-121>
+		<hr12-201>11.5%</hr12-201>
+		<hr201>11.0%</hr201>
+		<average1>7.48</average1>
+  </List>
+	<List>
+		<ages>26-35 years old</ages>
+		<hr11>8.0%</hr11>
+		<hr1-21>13.4%</hr1-21>
+		<hr2-41>19.2%</hr2-41>
+		<hr4-71>20.2%</hr4-71>
+		<hr7-121>17.0%</hr7-121>
+		<hr12-201>11.6%</hr12-201>
+		<hr201>10.5%</hr201>
+		<average1>7.50</average1>
+	</List>
+	<List>
+		<ages>36-45 years old</ages>
+		<hr11>9.3%</hr11>
+		<hr1-21>14.7%</hr1-21>
+		<hr2-41>21.1%</hr2-41>
+		<hr4-71>18.9%</hr4-71>
+		<hr7-121>15.0%</hr7-121>
+		<hr12-201>12.3%</hr12-201>
+		<hr201>8.8%</hr201>
+		<average1>7.09</average1>
+	</List>
+	<List>
+		<ages>46-60 years old</ages>
+		<hr11>15.9%</hr11>
+		<hr1-21>17.6%</hr1-21>
+		<hr2-41>18.9%</hr2-41>
+		<hr4-71>19.6%</hr4-71>
+		<hr7-121>14.7%</hr7-121>
+		<hr12-201>8.6%</hr12-201>
+		<hr201>4.9%</hr201>
+		<average1>5.72</average1>
+	</List>
+	<List>
+		<ages>Over 60 years old</ages>
+		<hr11>26.5%</hr11>
+		<hr1-21>20.3%</hr1-21>
+		<hr2-41>16.9%</hr2-41>
+		<hr4-71>14.0%</hr4-71>
+		<hr7-121>11.7%</hr7-121>
+		<hr12-201>6.1%</hr12-201>
+		<hr201>4.5%</hr201>
+		<average1>4.70</average1>
+	</List>
+	<List>
+		<ages>All ages</ages>
+		<hr11>14.5%</hr11>
+		<hr1-21>16.4%</hr1-21>
+		<hr2-41>18.7%</hr2-41>
+		<hr4-71>18.6%</hr4-71>
+		<hr7-121>14.8%</hr7-121>
+		<hr12-201>9.7%</hr12-201>
+		<hr201>7.%</hr201>
+		<average1>6.33</average1>
+	</List>
+	
+</Statistics>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library>
+	<List>
+		<One>Years Active</One>
+		<Two>10</Two>
+		<Three>20 (including previous iterations)</Three>
+		<Four>3</Four>
+		<Five>1</Five>
+		<Six>10</Six>
+		<Seven>3</Seven>
+	</List>
+	<List>
+		<One>Most Concurrent Viewers</One>
+		<Two>3,900,000</Two>
+		<Three>687,691</Three>
+		<Four>1,550,000</Four>
+		<Five>300,000</Five>
+		<Six>1,900,000</Six>
+		<Seven>2,300,000</Seven>
+	</List>
+	<List>
+		<One>Highest Prize Pool</One>
+		<Two>$6,450,000</Two>
+		<Three>$1,500,000</Three>
+		<Four>$3,050,000</Four>
+		<Five>$151,752</Five>
+		<Six>$34,396,851</Six>
+		<Seven>$15,287,500</Seven>
+	</List>
+	<List>
+		<One>Highest Earning Player</One>
+		<Two>Sang-heok "Faker" Lee - $1,257,620</Two>
+		<Three>Peter "dupreeh" Rasmussen - $1,856,322</Three>
+		<Four>Dong-Jun "Rascal" Kim - $558,791</Four>
+		<Five>Ardis "Ardiis" Svarenieks - $19,903</Five>
+		<Six>Johan "N0tail" Sundstein - $6,960,447</Six>
+		<Seven>Kyle "Bugha" Gierdorf - $3,141,395</Seven>
+	</List>
+	
+</Library>

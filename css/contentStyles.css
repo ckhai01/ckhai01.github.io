@@ -1,0 +1,152 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Catamaran', sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+h1, h3, h5, p {
+    margin: auto;
+    display: block;
+    text-align: justify;
+    word-wrap: break-word;
+    word-break: keep-all;
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+}
+p.overview, #fact{
+    text-align:left;
+}
+
+.content {
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+img{
+    align-content: center;
+    width:30%;
+    height: 50%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+form{
+    text-align: center;
+    margin: auto;
+    border: 2px solid white;
+}
+
+#fact_button {
+    display: block;
+    margin: auto;
+}
+
+table{
+    width: 75%;
+}
+
+table, th, td{
+    margin: auto;
+    border: 2px solid white;
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    color:black;
+}
+th{
+    background-color: #4CAF50;
+    color: white;
+}
+caption{
+    display: table-caption;
+    text-align: center !important;
+}
+#Title {
+    background-image: url("../media/Content-creation-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Navigation bar and footer*/
+
+#menu-nav {
+  margin: 0;
+  background-color: black;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+ 
+#navigation-bar ul {
+  border-radius: 4px;
+  overflow: hidden;
+}
+#navigation-bar li {
+  float: left;
+  width: 14.2%;
+}
+#navigation-bar li:hover a::before {
+  right: 0;
+  left: 0;
+}
+#navigation-bar a {
+  color: white;
+  font-size: 1.2vw;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 0;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+#navigation-bar a:hover {
+  color: darkgrey;
+}
+#navigation-bar a::before {
+  content: "";
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  background-color: aqua;
+}
+#navigation-bar a:hover::before {
+  right: 0;
+  left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    transition: 0.3s;
+
+}
+
+footer a:hover{
+    color: aqua;
+}

@@ -1,0 +1,253 @@
+﻿* {
+    font-family: 'Catamaran', sans-serif;
+}
+body {
+    background: linear-gradient(to bottom, #373737 0%, #000000 100%);
+    color: gray;
+}
+
+
+.para{
+    background: #2d2d2d;
+    padding: 50px;
+}
+
+@charset "UTF-8";
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/*
+.img-fluid { 
+    display: block; 
+    max-width:80%;  
+    margin:auto; 
+    padding-bottom:10px;
+}
+*/
+
+#gallery-heading {
+    font-size: 40px;
+    text-align: center;
+    color: goldenrod;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.gamerhead {
+    color: white;
+}
+ 
+table, td{
+    border:solid 2px;
+}
+
+table{
+    max-width: 50px;
+}
+
+td, th {
+    width: 5px;
+    margin-left:5em;
+}
+
+.example {
+    padding: 10px;
+    transition: transform .2s;
+    max-width: 250px;
+    max-height: 550px;
+    margin: 0 auto;
+}
+
+.zoom {
+    padding: 50px;
+    transition: transform .2s;
+    width: 200px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.zoom:hover{
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.example:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+p1 {
+    font-size: 20px;
+}
+
+h1, h2{
+    color: white;
+    text-align: center;
+}
+
+p2, pre{
+    line-height: 3px;
+}
+
+#reddit{
+    color: #509ec9;
+}
+
+#reddit:hover{
+    color: red;
+}
+
+.icon{
+    float:right;
+    max-height:100px;
+    max-width:100px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    margin-left: 20px;
+}
+
+label, select {
+    width: 120px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+fieldset {
+    border-radius: 10px;
+    color: white;
+}
+
+.scroll {
+    color: #fff;
+    margin-top: 100px
+}
+
+#toTopBtn {
+    position: fixed;
+    bottom: 26px;
+    right: 39px;
+    z-index: 98;
+    padding: 21px;
+    background-color: #8b8b8b;
+}
+
+.js .cd-top--fade-out {
+    opacity: .5
+}
+
+.js .cd-top--is-visible {
+    visibility: visible;
+    opacity: 1
+}
+
+.js .cd-top {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s, visibility .3s, background-color .3s
+}
+
+.cd-top {
+    position: fixed;
+    bottom: 20px;
+    bottom: var(--cd-back-to-top-margin);
+    right: 20px;
+    right: var(--cd-back-to-top-margin);
+    display: inline-block;
+    height: 40px;
+    height: var(--cd-back-to-top-size);
+    width: 40px;
+    width: var(--cd-back-to-top-size);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
+    background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
+    background-color: hsla(5, 76%, 62%, .8);
+    background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
+}
+
+p3{
+    font-size:25px;
+}
+
+.form {
+    max-width: 1200px;
+}
+
+/*Navigation bar and footer*/
+
+#menu-nav {
+  margin: 0;
+  background-color: black;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+ 
+#navigation-bar ul {
+  border-radius: 4px;
+  overflow: hidden;
+}
+#navigation-bar li {
+  float: left;
+  width: 14.2%;
+}
+#navigation-bar li:hover a::before {
+  right: 0;
+  left: 0;
+}
+#navigation-bar a {
+  color: white;
+  font-size: 1.2vw;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 0;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+#navigation-bar a:hover {
+  color: darkgrey;
+}
+#navigation-bar a::before {
+  content: "";
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  background-color: aqua;
+}
+#navigation-bar a:hover::before {
+  right: 0;
+  left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    transition: 0.3s;
+
+}
+
+footer a:hover{
+    color: aqua;
+}
